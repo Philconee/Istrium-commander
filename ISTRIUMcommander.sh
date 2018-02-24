@@ -957,7 +957,7 @@ three(){
                     echo -e "$(green "       Instance of ISTRIUM Node found with:")"
                     echo -e "$(green "       System PID: $node, Forever PID $forever_process")"
                     echo -e "$(green "       Directory: $arkdir")\n"
-            echo -e "\n$(green "             Updating ARK Node...")\n"
+            echo -e "\n$(green "             Updating ISTRIUM Node...")\n"
             update_ark
                     echo -e "$(green "                Restarting...")"
                     forever restart $forever_process >&- 2>&-
@@ -1002,7 +1002,7 @@ four(){
                 pause
         else
                 echo -e "\n$(red "       ✘ ISTRIUM Node process is not running")\n"
-                echo -e "$(green "             Dropping ARK DB...")\n"
+                echo -e "$(green "             Dropping ISTRIUM DB...")\n"
         drop_db
         drop_user
         echo -e "$(green "             Creating ISTRIUM DB...")\n"
@@ -1360,9 +1360,9 @@ else
         nvm
         sleep 5
         touch ./.firstrun
-        echo -e "\n$(ired "    !!!  PLEASE REBOOT YOUR SYSTEM NOW  !!!    ") "
-          echo -e "$(ired "    !!!   START THIS SCRIPT AGAIN AND   !!!    ") "
-          echo -e "$(ired "    !!!  CHOOSE '1' TO INSTALL ARK NODE !!!    ") "
+        echo -e "\n$(ired "    !!!  PLEASE RESTART YOUR TERMINAL NOW   !!!    ") "
+          echo -e "$(ired "    !!!    START THIS SCRIPT AGAIN AND      !!!    ") "
+          echo -e "$(ired "    !!!  CHOOSE '1' TO INSTALL ISTRIUM NODE !!!    ") "
         exit
     fi
 fi
